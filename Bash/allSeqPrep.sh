@@ -74,7 +74,7 @@ fastqc -o ~/bioCourse/atac_seq/QA ~/bioCourse/atac_seq/fastq/*trimmed*
 
 # aligning trimmed reads to the reference genome
 bowtie2 -x ~/bioCourse/ref/Arabidopsis_genome/tair10 -1 ~/bioCourse/atac_seq/fastq/SRR4000468_1_trimmed.fastq \
--2 ~/bioCourse/atac_seq/fastq/SRR4000468_1_trimmed.fastq -S ~/bioCourse/atac_seq/fastq/SRR4000468.sam
+-2 ~/bioCourse/atac_seq/fastq/SRR4000468_2_trimmed.fastq -S ~/bioCourse/atac_seq/fastq/SRR4000468.sam
 
 # convert sam to bam
 samtools view -S -b ~/bioCourse/atac_seq/fastq/SRR4000468.sam \
